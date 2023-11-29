@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigationsleiste</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <nav id="navfarbe" class="navigation_bar">
+        <div class="nav_logo">Illustrator</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="list-container">
+            <ul>
+                <li class="lifarbe"><a href="index.html">Arbeitsoberfläche</a></li>
+                <li class="lifarbe"><a href="#">Farben</a></li>
+                <li class="lifarbe"><a href="Zeichnen.html">Pfade</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <aside class="seite"></aside>
+
+
+
+
+        <div class="Farben">
+          <h2 id="Farben">Die Farben von Illustrator</h2>
+          <ul class="Seitenliste">
+            <li><a class="Linkfarbe" href="#Farbmodelle">Farbmodelle</a></li>
+            <li><a class="Linkfarbe" href="#Farbeinstellungen">Farbeinstellungen</a></li>
+            <li><a class="Linkfarbe" href="#Farbarten">Farbarten</a></li>
+            <li><a class="Linkfarbe" href="#Farbe-Bedienfeld">Farbe-Bedienfeld und Farbfelder-Bedienfeld</a></li>
+            <li><a class="Linkfarbe" href="#Verläufe">Verläufe</a></li>
+          </ul>
+        </div>
+
+        <div class="Farbmodelle">
+          <h3 class="Farbüberschrift" id="Farbmodelle">Die Farbmodelle</h3>
+          <figure class="img150">
+            <img src="RGB.png" width="150" height="150" border="0" alt="RGB" title="RGB, Illustrator">
+            <figcaption class="Bildunterschrift">Die Lichtfarben RGB</figcaption>
+          </figure>
+          <figure class="img150">
+            <img src="CMYK .png" width="150" height="150" border="0" alt="CMYK" title="CMYK, Illustrator">
+            <figcaption class="Bildunterschrift">Die Druckfarben CMYK</figcaption>
+          </figure>
+          <figure class="img150">
+            <img src="Farbumfang.png" width="150" height="150" border="0" alt="Farbumfang" title="Farbumfang, Illustrator">
+            <figcaption class="Bildunterschrift">Der RGB-Farbumfang (weiße Linie) ist größer als der Druckumfang (blaue Linie).</figcaption>
+          </figure>
+       </div>
+
+       <div class="Farbeinstellungen">
+        <h3 class="Farbüberschrift" id="Farbeinstellungen">Farbeinstellungen</h3>
+        <figure>
+            <img class="Farbeinstellungenbild" src="Farbeinstellungen.png" alt="Farbeinstellungen" title="Farbeinstellungen, Illustrator">
+            <figcaption class="Bildunterschrift">Die Farbeinstellungen von Illustrator</figcaption>
+          <img class="Farbeinstellungspeichernbild" src="Farbeinstellungspeichern.png" alt="Farbeinstellungspeichern" title="Farbeinstellungen speichern, Illustrator">
+            <figcaption class="Bildunterschrift">Die Farbeinstellungen von Illustrator speichern</figcaption>
+          </figure>
+        <ol>
+          <li>Synchronizität der Adobe-Programme?</li>
+          <li>Gespeicherte Einstellungen</li>
+          <li>Arbeitsfarbräume für RGB und CMYK</li>
+          <li>Was soll mit den Dokumenten passieren, die andere Farbeinstellungen haben?</li>
+          <li>Soll bei Problemen gefragt werden?</li>
+          <li>Eigene Einstellungen speichern und in Cloud nutzen. An Konvertierungsoptionen nur rangehen bei sehr guter Kenntnis.</li>
+          <li>ICC-Profile generell nicht einbetten, es sei denn Sie haben Bilder eingebunden.</li>
+        </ol>
+        <figure class="Farbwerte">
+            <img class="Farbwerte" src="VeränderungFarbwerte.png" alt="Farbwerte" title="Farbwerte, Illustrator">
+            <figcaption class="Bildunterschrift">Die Farbwertveränderung in Illustrator</figcaption>
+          </figure>
+          <p>Das reine Schwarz im CMYK-Modus verwandelt sich über eine Änderung in den RGB-Modus (Mitte) zu einem 4c-Schwarz (recht). Es gibt nun statt einer Farbe vier Farben, aus denen Schwarz besteht.</p>
+      </div>
+
+
+      <div class="Farbarten">
+
+        <h3 class="Farbüberschrift" id="Farbarten">Die unterschiedlichen Farbarten</h3>
+        <figure>
+           <img class="Zeichenwerkzeugebild" src="Farbfiltern-BedienfeldglobelokaleProzess.png" alt="Farbarten" title="Farbarten, Illustrator">
+           <figcaption class="Bildunterschrift">Die unterschiedlichen Farbarten in Illustrator</figcaption>
+         </figure>
+
+        <ol>
+          <li>Farbfelder in eckigen Klammern sind nicht veränderbar</li>
+          <li>lokale Farbe</li>
+          <li>globale Farbe</li>
+          <li>Prozess-Farbe</li>
+          <li>Volltonfarben</li>
+        </ol>
+
+        <h4 class="Farbüberschrift">Lokale Farbe</h4>
+        <p>Hat keine feste Bindung zu den Objekten, die mit dieser Farbe versehen wurden.<br/>
+        Wenn Sie ein Objekt aktivieren, wird die Farbe in dem Farbfelder-Bedienfeld hervorgehoben,<br/>
+        falls das Objekt mit einer Farbe von dort versehen wurde, und in jedem Fall werden Ihnen die Farbwerte <br/>
+        in dem Farbe-Bedienfeld angezeigt. Ändern Sie dort bei aktiviertem Objekt die Farbe,<br/>
+        ändert sich nur das aktivierte Objekt. Alle anderen Objekte mit derselben farbe bleiben so, wie sie sind.</p>
+
+        <h4 class="Farbüberschrift">Globale Farbe</h4>
+        <p>Per Doppelklick änderbar. Es ändern sich alle Objekte mit dieser Farbe - selbst wenn <br/>
+        sie nicht aktiviert sind. Globale Farbe gibt es nur als Farbfeld. Ändern Sie diese Farbe im <br/>
+        Farbe-Bedienfeld, verliert das grade aktive Objekt die Verbindung zum Farbfeld und ist nicht mehr global.<br/>
+        Im Farbe-Bedienfeld können Sie den Tonwert einer globalen Farbe von 0% bis 100% ändern.<br/>
+        Die Farbe bleibt dabei global und wird nicht transparent, sondern nur heller oder dunkler.</p>
+
+        <h4 class="Farbüberschrift">Prozessfarben</h4>
+        <p>Das sind alle Farben, die aus den vier Farben Cyan, Magenta, Gelb und Schwarz im Vierfarbdruck zusammengesetzt<br/>
+        werden. Diese können in Illustrator als global oder lokal definiert werden.</p>
+
+        <h4 class="Farbüberschrift">Volltonfarben</h4>
+        <p>Diese sind in Illustratorimmer global. Sie werden vor dem Druck als definierte Farbe vorgemischt<br/>
+        und so gedruckt, wie sie ist. Dadurch ist ein separater Druckfilm bzw. eine weitere Druckplatte und meist <br/>
+        ein fünfter Druckdurchgang (C-M-Y-K + SOnderfarbe) erforderlich, was Mehrkosten nach sich zieht.</p>
+        
+     </div>
+
+     <div class="Farbe-Bedienfeld">
+
+        <h3 class="Farbüberschrift" id="Farbe-Bedienfeld">Das Farbe-Bedienfeld und das Farbfelder-Bedienfeld</h3>
+        <figure>
+           <img class="Farbe-Bedienfelder" src="Farbe-Bedienfeld.png" alt="Farbe-Bedienfeld" title="Farbe-Bedienfeld, Illustrator">
+           <figcaption class="Bildunterschrift">Das Farbe-Bedienfeld in Illustrator</figcaption>
+         </figure>
+         <figure>
+            <img class="Farbe-Bedienfelder" src="KleinesBedienfeld.png" alt="KleinesBedienfeld" title="Farbfelder-Bedienfeld, Illustrator">
+            <figcaption class="Bildunterschrift">Das Farbfelder-Bedienfeld in Illustrator</figcaption>
+          </figure>
+
+        <ol class="Zweispaltig">
+          <li>Fläche- und Konturfarbe<br/> tauschen</li>
+          <li>Schwarzweiß-Symbol</li>
+          <li>Flächen- bzw. Konturfarbe</li>
+          <li>Würfel oder Warndreieck:<br/> Farbe liegt außerhalb des websicheren/<br/>druckbaren Bereichs</li>
+          <li>OHNE, SCHWARZ <br/>oder WEISS</li>
+          <li>Farbkeil, aus dem heraus <br/>einzelne Farben auswählbar sind</li>
+          <li>Schiebergeler</li>
+          <li>feste Werte eintippbar</li>
+          <li>lokale Farbe</li>
+          <li>globale Farbe</li>
+          <li>Volltonfarbe</li>
+          <li>Flyout-Menü bestimmen, wie <br/>Farbfelder angeziegt werden:<br/> LISTE, Name oder Farbwerte <br/>oder MINIATUREN</li>
+          <li>Flächenfarbe oder<br/> Konturfarbe<br/> anwenden/auswählen/<br/>öndern</li>
+          <li>Miniaturenansicht der <br/>einzelnen Farben, Verläufe <br/>und Muster</li>
+          <li>Farbgruppen</li>
+          <li>FARBFELDBIBLIOTHEKEN</li>
+          <li>COLOR-SCHEMATA<br/>-BEDIENFELD<br/> ÖFFNEN</li>
+          <li>LIBRARY</li>
+          <li>FARBFELDARTEN<br/> EINBLENDEN</li>
+          <li>FARBFELDOPTIONEN</li>
+          <li>NEUE FARBGRUPPE</li>
+          <li>NEUES FARBFELD</li>
+          <li>Papierkorb</li>
+        </ol>
+
+     </div>
+
+     <div class="Verlauf">
+
+        <h3 class="Farbüberschrift" id="Verlauf">Verlauf</h3>
+        <figure>
+           <img class="Verlaufbild" src="Verlauf.png" alt="Farbe-Bedienfeld" title="Verlauf, Illustrator">
+           <figcaption class="Bildunterschrift">Der Verlauf in Illustrator</figcaption>
+         </figure>
+
+         <ol class="Zweispaltig">
+            <li>Verlaufsfläche</li>
+            <li>Auswahl, ob er sich auf <br/>Fläche oder Kontur bezieht</li>
+            <li>Farbreihenfolge umdrehen</li>
+            <li>VERLAUFREGLER</li>
+            <li>0% = durchsichtig und <br/>% = deckend</li>
+            <li>POSITION</li>
+            <li>gerade (LINEAR) oder <br/> KREISFÖRMIG oder<br/> FREIHAND</li>
+            <li>VERLAUF BEARBEITEN <br/>aktiviert das <br/>Velaufswerkzeug (G)</li>
+            <li>mit den drei Buttons <br/>bestimmen, ob sich <br/>der Verlauf über <br/>die Kontur erstreckt <br/>(links), ohne deren Form<br/> zu berücksichtigen, ob er <br/>der Kontur vom Anfang bis <br/>zum Ende folgt (Mitte) <br/>oder ob er die Kontur in <br/>seiner Breite erfasst (rechts).</li>
+            <li>Winkel des Verlaufs <br/>numerisch verstellen</li>
+            <li>bei kreisförmigem Verlauf, <br/> bestimmen, o er rund oder <br/>linsenförmig werden soll <br/> (rund = 100%)</li>
+            <li>wählbar ob Verlauf schneller<br/> ansteigen oder langsamer <br/>abfallen soll</li>
+         </ol>
+     </div>
+
+
+
+
+
+
+    <footer class="fussfarbe">
+      <nav id="footfarbe">
+        <ul class="Seitenliste">
+            <li><a href="#Farbmodelle">Farbmodelle</a></li>
+            <li><a href="#Farbeinstellungen">Farbeinstellungen</a></li>
+            <li><a href="#Farbarten">Farbarten</a></li>
+            <li><a href="#Farbe-Bedienfeld">Farbe-Bedienfeld und Farbfelder-Bedienfeld</a></li>
+            <li><a href="#Verläufe">Verläufe</a></li>
+        </ul>
+      </nav>
+    </footer>
+</body>
+</html>
